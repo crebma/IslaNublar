@@ -77,6 +77,20 @@ describe(@"INDinosaurListViewController", ^{
         [[controller.dinosaurs should] equal:newDinos];
     });
 
+    it(@"sets the dinosaurs when service call is successful", ^{
+        AFJSONRequestOperation *operation = [AFJSONRequestOperation nullMock];
+        [AFJSONRequestOperation stub:@selector(JSONRequestOperationWithRequest:success:failure:) andReturn:operation];
+        KWCaptureSpy *successCaptor = [AFJSONRequestOperation captureArgument:@selector(JSONRequestOperationWithRequest:success:failure:) atIndex:1];
+
+        [controller viewDidAppear:YES];
+
+        void(^success)(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) = successCaptor.argument;
+        NSArray *newDinos = @[@{}, @{}];
+        success(nil, nil, newDinos);
+
+        [[controller.dinosaurs shouldEventually] equal:newDinos];
+    });
+
 });
 
 SPEC_END
