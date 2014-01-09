@@ -14,6 +14,7 @@
 
 @end
 
+
 SPEC_BEGIN(INDinosaurListViewControllerSpec)
 
 describe(@"INDinosaurListViewController", ^{
@@ -51,6 +52,29 @@ describe(@"INDinosaurListViewController", ^{
         [[operation should] receive:@selector(start)];
 
         [controller tableView:nil didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    });
+
+    it(@"sets the dinosaurs when service call is successful", ^{
+        AFJSONRequestOperation *operation = [AFJSONRequestOperation nullMock];
+        [AFJSONRequestOperation stub:@selector(JSONRequestOperationWithRequest:success:failure:) andReturn:operation];
+        KWCaptureSpy *successCaptor = [AFJSONRequestOperation captureArgument:@selector(JSONRequestOperationWithRequest:success:failure:) atIndex:1];
+
+        [controller viewDidAppear:YES];
+
+        void(^success)(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) = successCaptor.argument;
+
+        NSOperationQueue *queue = [NSOperationQueue nullMock];
+        [NSOperationQueue stub:@selector(mainQueue) andReturn:queue];
+        [queue stub:@selector(addOperationWithBlock:) withBlock:^id(NSArray *params) {
+            void(^theBlock)() = [params objectAtIndex:0];
+            theBlock();
+            return nil;
+        }];
+
+        NSArray *newDinos = @[@{}, @{}];
+        success(nil, nil, newDinos);
+
+        [[controller.dinosaurs should] equal:newDinos];
     });
 
 });

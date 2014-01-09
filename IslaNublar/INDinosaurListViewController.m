@@ -21,28 +21,25 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 
-    dispatch_queue_t aQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_async(aQueue, ^{
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:9393/dinos"]];
-        AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request
-                                                            success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-                                                                dispatch_async(dispatch_get_main_queue(), ^{
-                                                                    self.dinosaurs = JSON;
-                                                                    [self.tableView reloadData];
-                                                                });
-                                                            }
-                                                            failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-                                                                dispatch_async(dispatch_get_main_queue(), ^{
-                                                                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"noes!"
-                                                                                                                       message:[error localizedDescription]
-                                                                                                                      delegate:nil
-                                                                                                             cancelButtonTitle:@"ok :'("
-                                                                                                             otherButtonTitles:nil];
-                                                                    [alertView show];
-                                                                });
-                                                            }];
-        [operation start];
-    });
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:9393/dinos"]];
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request
+                        success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+                            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                                self.dinosaurs = JSON;
+                                [self.tableView reloadData];
+                            }];
+                        }
+                        failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+                            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"noes!"
+                                                                                    message:[error localizedDescription]
+                                                                                   delegate:nil
+                                                                          cancelButtonTitle:@"ok :'("
+                                                                          otherButtonTitles:nil];
+                                [alertView show];
+                            }];
+                        }];
+    [operation start];
 }
 
 #pragma mark - Table view data source
