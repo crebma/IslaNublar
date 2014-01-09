@@ -21,6 +21,7 @@
     self = [super initWithNibName:@"INDinosaurViewController" bundle:nil];
     if (self) {
         self.dinosaur = dinosaur;
+        //800 other things you dont want to deal with right now
     }
     return self;
 }
