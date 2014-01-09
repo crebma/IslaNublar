@@ -4,6 +4,7 @@
 
 #import "Kiwi.h"
 #import "INDinosaurListViewController.h"
+#import "AFJSONRequestOperation.h"
 
 @interface INDinosaurListViewController (Spec)
 
@@ -41,6 +42,15 @@ describe(@"INDinosaurListViewController", ^{
         [[label should] receive:@selector(setText:) withArguments:dinoName];
         
         [controller setTextForCell:cell atIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    });
+
+    it(@"gets some jaysone from a service!", ^{
+        AFJSONRequestOperation *operation = [AFJSONRequestOperation nullMock];
+        [AFJSONRequestOperation stub:@selector(JSONRequestOperationWithRequest:success:failure:) andReturn:operation];
+
+        [[operation should] receive:@selector(start)];
+
+        [controller tableView:nil didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     });
 
 });

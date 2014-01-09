@@ -23,7 +23,7 @@
 
     dispatch_queue_t aQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(aQueue, ^{
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://dino-lister.firebaseio.com/.json"]];
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:9393/dinos"]];
         AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request
                                                             success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
                                                                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -80,7 +80,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://dino-lister.firebaseio.com/%d.json", indexPath.row]]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:9393/%d", indexPath.row]]];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request
                                                     success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
                                                         INDinosaurViewController *controller = [[INDinosaurViewController alloc] initWithDinosaur:JSON];
