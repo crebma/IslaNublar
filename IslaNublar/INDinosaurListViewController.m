@@ -64,10 +64,14 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
-    [cell.textLabel setText:[[self.dinosaurs objectAtIndex:indexPath.row] valueForKey:@"name"]];
+
+    [self setTextForCell:cell atIndexPath:indexPath];
 
     return cell;
+}
+
+- (void)setTextForCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    [cell.textLabel setText:[[self.dinosaurs objectAtIndex:indexPath.row] valueForKey:@"name"]];
 }
 
 #pragma mark - Table view delegate
