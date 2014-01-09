@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		589F05D39B4F5BB9B7BCD474 /* INDinosaurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96489C44187E03A0002CB487 /* INDinosaurViewController.m */; };
+		589F0AE57A345B16C2312AA7 /* INDinosaurListViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0AB1D6F592DAB2DF7469 /* INDinosaurListViewControllerSpec.m */; };
+		589F0C6DCFB8195C7982A8FF /* INDinosaurListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96489C3F187B03AE002CB487 /* INDinosaurListViewController.m */; };
 		96489C41187B03AE002CB487 /* INDinosaurListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96489C3F187B03AE002CB487 /* INDinosaurListViewController.m */; };
 		96489C42187B03AE002CB487 /* INDinosaurListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96489C40187B03AE002CB487 /* INDinosaurListViewController.xib */; };
 		96489C46187E03A0002CB487 /* INDinosaurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96489C44187E03A0002CB487 /* INDinosaurViewController.m */; };
@@ -32,6 +35,7 @@
 		0C281BA2B7C548BD811E0603 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D623C174504A2B8EC0390F /* libPods-IslaNublarSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IslaNublarSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CAC1E55B3EF4EA9B6449EB4 /* Pods-IslaNublarSpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IslaNublarSpecs.xcconfig"; path = "Pods/Pods-IslaNublarSpecs.xcconfig"; sourceTree = "<group>"; };
+		589F0AB1D6F592DAB2DF7469 /* INDinosaurListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDinosaurListViewControllerSpec.m; sourceTree = "<group>"; };
 		96489C3E187B03AE002CB487 /* INDinosaurListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDinosaurListViewController.h; sourceTree = "<group>"; };
 		96489C3F187B03AE002CB487 /* INDinosaurListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDinosaurListViewController.m; sourceTree = "<group>"; };
 		96489C40187B03AE002CB487 /* INDinosaurListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INDinosaurListViewController.xib; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				966D4861187F022C00EB3D32 /* Supporting Files */,
+				589F0AB1D6F592DAB2DF7469 /* INDinosaurListViewControllerSpec.m */,
 			);
 			path = IslaNublarSpecs;
 			sourceTree = "<group>";
@@ -344,6 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589F0AE57A345B16C2312AA7 /* INDinosaurListViewControllerSpec.m in Sources */,
+				589F0C6DCFB8195C7982A8FF /* INDinosaurListViewController.m in Sources */,
+				589F05D39B4F5BB9B7BCD474 /* INDinosaurViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
