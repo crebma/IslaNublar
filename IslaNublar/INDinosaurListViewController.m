@@ -18,6 +18,11 @@
 
 @implementation INDinosaurListViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.navigationItem.title = @"Pick a dino.";
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 

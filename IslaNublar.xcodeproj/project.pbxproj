@@ -11,6 +11,10 @@
 		96489C42187B03AE002CB487 /* INDinosaurListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96489C40187B03AE002CB487 /* INDinosaurListViewController.xib */; };
 		96489C46187E03A0002CB487 /* INDinosaurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96489C44187E03A0002CB487 /* INDinosaurViewController.m */; };
 		96489C47187E03A0002CB487 /* INDinosaurViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96489C45187E03A0002CB487 /* INDinosaurViewController.xib */; };
+		966D485D187F022C00EB3D32 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96489C4E187EF519002CB487 /* SenTestingKit.framework */; };
+		966D485E187F022C00EB3D32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682D1E818712E2700A08BAF /* UIKit.framework */; };
+		966D485F187F022C00EB3D32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682D1EA18712E2700A08BAF /* Foundation.framework */; };
+		966D4865187F022C00EB3D32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 966D4863187F022C00EB3D32 /* InfoPlist.strings */; };
 		9682D1E918712E2700A08BAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682D1E818712E2700A08BAF /* UIKit.framework */; };
 		9682D1EB18712E2700A08BAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682D1EA18712E2700A08BAF /* Foundation.framework */; };
 		9682D1ED18712E2700A08BAF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682D1EC18712E2700A08BAF /* CoreGraphics.framework */; };
@@ -21,16 +25,24 @@
 		9682D1FD18712E2700A08BAF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9682D1FC18712E2700A08BAF /* Default@2x.png */; };
 		9682D1FF18712E2700A08BAF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9682D1FE18712E2700A08BAF /* Default-568h@2x.png */; };
 		BB8770398B254DBC973F7AAF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C281BA2B7C548BD811E0603 /* libPods.a */; };
+		DD96AFD46E1B4006B6BAF4E9 /* libPods-IslaNublarSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D623C174504A2B8EC0390F /* libPods-IslaNublarSpecs.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C281BA2B7C548BD811E0603 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D623C174504A2B8EC0390F /* libPods-IslaNublarSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IslaNublarSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CAC1E55B3EF4EA9B6449EB4 /* Pods-IslaNublarSpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IslaNublarSpecs.xcconfig"; path = "Pods/Pods-IslaNublarSpecs.xcconfig"; sourceTree = "<group>"; };
 		96489C3E187B03AE002CB487 /* INDinosaurListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDinosaurListViewController.h; sourceTree = "<group>"; };
 		96489C3F187B03AE002CB487 /* INDinosaurListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDinosaurListViewController.m; sourceTree = "<group>"; };
 		96489C40187B03AE002CB487 /* INDinosaurListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INDinosaurListViewController.xib; sourceTree = "<group>"; };
 		96489C43187E03A0002CB487 /* INDinosaurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDinosaurViewController.h; sourceTree = "<group>"; };
 		96489C44187E03A0002CB487 /* INDinosaurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDinosaurViewController.m; sourceTree = "<group>"; };
 		96489C45187E03A0002CB487 /* INDinosaurViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INDinosaurViewController.xib; sourceTree = "<group>"; };
+		96489C4E187EF519002CB487 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		966D485C187F022C00EB3D32 /* IslaNublarSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IslaNublarSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		966D4862187F022C00EB3D32 /* IslaNublarSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IslaNublarSpecs-Info.plist"; sourceTree = "<group>"; };
+		966D4864187F022C00EB3D32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		966D4869187F022C00EB3D32 /* IslaNublarSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IslaNublarSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		9682D1E518712E2700A08BAF /* IslaNublar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IslaNublar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9682D1E818712E2700A08BAF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9682D1EA18712E2700A08BAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +60,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		966D4858187F022C00EB3D32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966D485D187F022C00EB3D32 /* SenTestingKit.framework in Frameworks */,
+				966D485E187F022C00EB3D32 /* UIKit.framework in Frameworks */,
+				966D485F187F022C00EB3D32 /* Foundation.framework in Frameworks */,
+				DD96AFD46E1B4006B6BAF4E9 /* libPods-IslaNublarSpecs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9682D1E218712E2700A08BAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,13 +85,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		966D4860187F022C00EB3D32 /* IslaNublarSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				966D4861187F022C00EB3D32 /* Supporting Files */,
+			);
+			path = IslaNublarSpecs;
+			sourceTree = "<group>";
+		};
+		966D4861187F022C00EB3D32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				966D4862187F022C00EB3D32 /* IslaNublarSpecs-Info.plist */,
+				966D4863187F022C00EB3D32 /* InfoPlist.strings */,
+				966D4869187F022C00EB3D32 /* IslaNublarSpecs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9682D1DC18712E2700A08BAF = {
 			isa = PBXGroup;
 			children = (
 				9682D1EE18712E2700A08BAF /* IslaNublar */,
+				966D4860187F022C00EB3D32 /* IslaNublarSpecs */,
 				9682D1E718712E2700A08BAF /* Frameworks */,
 				9682D1E618712E2700A08BAF /* Products */,
 				B6034FD7615B48C78BC6AFC1 /* Pods.xcconfig */,
+				3CAC1E55B3EF4EA9B6449EB4 /* Pods-IslaNublarSpecs.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				9682D1E518712E2700A08BAF /* IslaNublar.app */,
+				966D485C187F022C00EB3D32 /* IslaNublarSpecs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +131,8 @@
 				9682D1EA18712E2700A08BAF /* Foundation.framework */,
 				9682D1EC18712E2700A08BAF /* CoreGraphics.framework */,
 				0C281BA2B7C548BD811E0603 /* libPods.a */,
+				96489C4E187EF519002CB487 /* SenTestingKit.framework */,
+				23D623C174504A2B8EC0390F /* libPods-IslaNublarSpecs.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,6 +170,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		966D485B187F022C00EB3D32 /* IslaNublarSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966D486C187F022C00EB3D32 /* Build configuration list for PBXNativeTarget "IslaNublarSpecs" */;
+			buildPhases = (
+				E57677A823DB431C85908534 /* Check Pods Manifest.lock */,
+				966D4857187F022C00EB3D32 /* Sources */,
+				966D4858187F022C00EB3D32 /* Frameworks */,
+				966D4859187F022C00EB3D32 /* Resources */,
+				966D485A187F022C00EB3D32 /* ShellScript */,
+				D02B3972C0F847ECBEF3203B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IslaNublarSpecs;
+			productName = IslaNublarSpecs;
+			productReference = 966D485C187F022C00EB3D32 /* IslaNublarSpecs.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		9682D1E418712E2700A08BAF /* IslaNublar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9682D20818712E2700A08BAF /* Build configuration list for PBXNativeTarget "IslaNublar" */;
@@ -163,14 +229,25 @@
 			mainGroup = 9682D1DC18712E2700A08BAF;
 			productRefGroup = 9682D1E618712E2700A08BAF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				9682D1E418712E2700A08BAF /* IslaNublar */,
+				966D485B187F022C00EB3D32 /* IslaNublarSpecs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		966D4859187F022C00EB3D32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966D4865187F022C00EB3D32 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9682D1E318712E2700A08BAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,9 +294,59 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		966D485A187F022C00EB3D32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		D02B3972C0F847ECBEF3203B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-IslaNublarSpecs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E57677A823DB431C85908534 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		966D4857187F022C00EB3D32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9682D1E118712E2700A08BAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +361,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		966D4863187F022C00EB3D32 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				966D4864187F022C00EB3D32 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		9682D1F118712E2700A08BAF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -245,6 +380,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		966D486A187F022C00EB3D32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAC1E55B3EF4EA9B6449EB4 /* Pods-IslaNublarSpecs.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IslaNublarSpecs/IslaNublarSpecs-Prefix.pch";
+				INFOPLIST_FILE = "IslaNublarSpecs/IslaNublarSpecs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		966D486B187F022C00EB3D32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAC1E55B3EF4EA9B6449EB4 /* Pods-IslaNublarSpecs.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IslaNublarSpecs/IslaNublarSpecs-Prefix.pch";
+				INFOPLIST_FILE = "IslaNublarSpecs/IslaNublarSpecs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		9682D20618712E2700A08BAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -330,6 +497,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		966D486C187F022C00EB3D32 /* Build configuration list for PBXNativeTarget "IslaNublarSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966D486A187F022C00EB3D32 /* Debug */,
+				966D486B187F022C00EB3D32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9682D1E018712E2700A08BAF /* Build configuration list for PBXProject "IslaNublar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
